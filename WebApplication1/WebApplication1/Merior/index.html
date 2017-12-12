@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>welcome</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style-nav.css" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/settings.css" />
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <div id="contraner">
+        <div id="h-about-part">
+            <div id="wrapper">
+                <div class="h-about-text-bg">
+                    <div class="h-about-text-part">
+                        <div class="h-about-heading">Sofa Clean Company</div>
+                        <div class="h-about-text" style="width:100%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        jQuery(document).ready(function () {
+
+            jQuery('#example1').showbizpro({
+                dragAndScroll: "off",
+                visibleElementsArray: [1, 1, 1, 1],
+                carousel: "off",
+                entrySizeOffset: 0,
+                allEntryAtOnce: "off",
+                speed: 700,
+                autoPlay: "on",
+                rewindFromEnd: "on",
+                delay: 3000,
+            });
+            // THE FANCYBOX PLUGIN INITALISATION
+            jQuery(".fancybox").fancybox();
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            SyntaxHighlighter.all();
+        });
+        $(window).load(function () {
+            $('#carousel').flexslider({
+                animation: "slide",
+                controlNav: false,
+                animationLoop: false,
+                slideshow: false,
+                itemWidth: 147,
+                itemMargin: 5,
+                asNavFor: '#slider'
+            });
+
+            $('#slider').flexslider({
+                animation: "slide",
+                controlNav: false,
+                animationLoop: false,
+                slideshow: false,
+                sync: "#carousel",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+    <script language="javascript">
+        function toggle(elementId) {
+            var ele = document.getElementById(elementId);
+            if (ele.style.display == "block") {
+                ele.style.display = "none";
+            }
+            else {
+                ele.style.display = "block";
+            }
+        }
+    </script>
+    <script defer=defer src="js/js/jquery.flexslider.js"></script>
+    <script src="scripts/jquery-flexslider.min.js"></script>
+    <script src="scripts/jquery-flexslider-setup.js"></script>
+    <script type="text/javascript" src="js/jquery_002.js"></script>
+    <script type="text/javascript" src="js/jquery_003.js"></script>
+
+</body>
+</html>

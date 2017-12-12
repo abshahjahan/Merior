@@ -1,0 +1,98 @@
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author:Tyler Smith (@mbmufffin)
+ *
+ * Heavily Modified by: OS Templates (www.os-templates.com)
+ */
+.more{ clear:both; width:100%; float:left; padding:0px; margin:0px;}
+.more ul{ list-style-type:none; clear:both;}
+.more li{ clear:both; width:100%; float:left; padding:0px; margin:0px; font:normal 15px 'ralewaybold'; color:#000000; letter-spacing:1px; line-height:0px; text-shadow: 1px 1px 0 #ffffff;}
+#footer section nav li{margin:0 0 8px 0; padding:0 0 5px 0; border-bottom:1px solid #555555;}
+#footer section nav li.last{margin:0;}
+#footer section nav a{padding:0 0 0 10px; background:url("../images/arrow.gif") left center no-repeat;}
+#featured_slide{display:block; position:relative; margin:0px 0 0px 0; padding:0;}
+#featured_slide a{outline:none; text-decoration:none;}
+#featured_slide section, #featured_slide ul, #featured_slide ol{margin:0; padding:0; list-style:none; line-height:normal;}
+
+/* FlexSlider Necessary Styles */ 
+
+.flexslider{display:block; position:relative; margin:0; padding:0;}
+.flexslider .slides li{display:none; -webkit-backface-visibility:hidden;}
+.flexslider .slides img{width:100%; display:block; margin:0; padding:0;}
+.flex-pauseplay span{text-transform:capitalize;}
+
+/* Clearfix for the .slides element */
+
+.slides:after{content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0;}
+html[xmlns] .slides{display:block;}
+* html .slides{height:1%;}
+
+/* FlexSlider Default Theme */
+
+.flexslider .slides li{position:relative;}
+.flexslider .slides li .flex-caption{display:block; position:absolute; bottom:0px; right:0px; width:95%; height:88.5%; padding:2%; overflow:hidden; color:#FFFFFF;}
+#featured_slide h2{margin:180px 0px 0px 0px; padding:80px 0px 80px 0px; font:normal 27px Arial, Helvetica, sans-serif; text-transform:uppercase; color:#ffffff; direction:rtl; line-height:50px; text-align:center; background:url(../images/sli-bg.png) no-repeat center center;}
+.span{font:bold 43px Arial, Helvetica, sans-serif!important; color:#00a3d9!important; direction:rtl; text-transform:uppercase; text-align:center;}
+
+/* Direction Nav */
+
+.flex-direction-nav a{display:block; position:absolute; top:28%; width:40px; height:62px; margin:-20px 0 0; background:url("../images/bg_direction_nav.png") no-repeat 0 0; cursor:pointer; text-indent:-9999px; opacity:1;}
+.flex-direction-nav .flex-next{right:-5px; background-position:0 100%; }
+.flex-direction-nav .flex-prev{left:-5px;}
+.flexslider:hover .flex-next, .flexslider:hover .flex-prev{opacity:0.8;}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover{opacity:1;}
+.flex-direction-nav .disabled{opacity:.3; filter:alpha(opacity=30); cursor:default;}
+.ser-sli-big .flex-direction-nav a{background:none;}
+/* Control Nav */
+
+.flex-control-nav{position:absolute; bottom:3%; right:1%; text-align:center; z-index:999;}
+.flex-control-nav li{display:inline-block; *display:inline; margin:0 6px; }
+.flex-control-paging li a{display:block; width:12px; height:12px; background:#d7d7d7; cursor:pointer; text-indent:-9999px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%;}
+.flex-control-paging li a:hover{background:#7c7c7c;}
+.flex-control-paging li a.flex-active{background:#00a3d9; cursor:default;}
+
+/*----------------------------------------------Media Calls-------------------------------------*/
+
+@media screen 
+and (min-width : 970px) 
+and (max-width : 1099px) {
+	#featured_slide h2{margin:100px 0px 0px 0px;}
+}
+@media screen 
+and (min-width : 768px) 
+and (max-width : 969px) {
+	#featured_slide h2{margin:100px 0px 0px 0px;}
+}
+@media screen 
+and (min-width : 320px) 
+and (max-width : 767px) {
+	.flexslider .slides li .flex-caption{ display:none;}
+}
+
+
+
+.slider { margin: 0px 0 0px!important;}
+#carousel li {margin-right: 0px; background:none;}
+#carousel li p {font:bold 14px Arial, Helvetica, sans-serif;
+	color:#ffffff;
+	text-align:center;
+	direction:rtl;
+	margin-top:10px;}
+#carousel img {display: block; opacity: .5; cursor: pointer; width:147px;}
+#carousel img:hover {opacity: 1;}
+#carousel .flex-active-slide img {opacity: 1; cursor: default;}
+
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

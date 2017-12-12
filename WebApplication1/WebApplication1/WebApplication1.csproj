@@ -106,10 +106,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Merior\about-us.html" />
+    <Content Include="Merior\contact-us.html" />
+    <Content Include="Merior\index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Merior\css\" />
+    <Folder Include="Merior\images\" />
+    <Folder Include="Merior\js\" />
+    <Folder Include="Merior\scripts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
