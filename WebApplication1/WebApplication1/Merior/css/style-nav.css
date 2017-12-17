@@ -208,7 +208,7 @@
 @media all and (max-width: 767px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 767px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 767px), only screen and (min-device-pixel-ratio: 2) and (max-width:767px), only screen and (min-resolution: 192dpi) and (max-width: 767px), only screen and (min-resolution: 2dppx) and (max-width: 767px) {
   #cssmenu {
     width: 100%;
-	background:#000000;
+	background:none;
   }
   #cssmenu ul {
     width: 100%;
@@ -220,6 +220,8 @@
   #cssmenu ul li {
     width: 100%;
     border-top: 1px solid #191719;
+	background:#000000;
+	padding-right:20px;
   }
   #cssmenu ul ul li,
   #cssmenu li:hover > ul > li {
@@ -390,4 +392,7 @@
   #cssmenu .submenu-button.submenu-opened:before {
     display: none;
   }
+  #cssmenu > ul > li.has-sub > a {
+  padding-right: 0px;
+}
 }

@@ -69,6 +69,28 @@ h1
 	text-align:left;
 	direction:rtl;
 }
+.h-email-text a
+{
+	font:normal 15px Arial, Helvetica, sans-serif;
+	color:#ffffff;
+	text-align:left;
+	direction:rtl;
+	text-decoration:none;
+}
+.h-email-text a:hover
+{
+	color:#00a3d9;
+}
+#navigation-part
+{
+	width:100%;
+	padding:0px;
+	margin:0px;
+	position:absolute;
+	z-index:999;
+	top:60px;
+	z-index:9999;
+}
 #navi
 {
 	width:100%;
@@ -496,6 +518,8 @@ h1
 }
 .testi-left-img img
 {
+	width:100px;
+	height:100px;
 	-webkit-border-radius: 200px;
 	-moz-border-radius: 200px;
 	border-radius: 200px;
